@@ -6,9 +6,10 @@
 
 ## Activity 2-5 </r>
 ### Home Page </r>
-<img width="1299" alt="Screen Shot 2022-10-25 at 10 38 58 PM" src="https://user-images.githubusercontent.com/39924702/197921831-1085b165-0625-4cea-a0bf-e1b6eade35e2.png">
+<img width="1511" alt="Screen Shot 2022-10-26 at 10 47 15 AM" src="https://user-images.githubusercontent.com/39924702/198058878-e6029ab4-e30c-4b33-8d07-906a919d30cb.png">
 
 ### Results Page - Form </r>
+<img width="1507" alt="Screen Shot 2022-10-26 at 10 47 48 AM" src="https://user-images.githubusercontent.com/39924702/198058896-bb8376e7-eaa1-4dd5-806e-dda39fd72d4c.png">
 
 ### Results Page - Results Table </r>
-<img width="1258" alt="Screen Shot 2022-10-25 at 10 37 55 PM" src="https://user-images.githubusercontent.com/39924702/197921863-6c4980ce-5b2e-4d38-aa24-7eec82c25f46.png">
+<img width="1499" alt="Screen Shot 2022-10-26 at 10 48 02 AM" src="https://user-images.githubusercontent.com/39924702/198058908-c295e9ca-230f-496f-bb38-9c17de1c2c79.png">
