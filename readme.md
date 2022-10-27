@@ -13,3 +13,12 @@
 
 ### Results Page - Results Table </r>
 <img width="1499" alt="Screen Shot 2022-10-26 at 10 48 02 AM" src="https://user-images.githubusercontent.com/39924702/198058908-c295e9ca-230f-496f-bb38-9c17de1c2c79.png">
+
+
+## Activity 6 </r>
+
+### Post Review Page </r>
+<img width="1499" src="./screenshots/navid/post_review.png">
+
+### Course Description Review </r>
+<img width="1499" src="./screenshots/navid/course_page_review.png">

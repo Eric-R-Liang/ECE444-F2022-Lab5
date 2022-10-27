@@ -7,7 +7,7 @@ from collections import defaultdict
 from scipy.sparse import load_npz
 from sklearn.metrics.pairwise import cosine_similarity
 from flask import Flask, render_template, request, redirect
-from wtforms import Form, StringField, SelectField
+from wtforms import Form, StringField, SelectField, TextAreaField
 
 """Build the search form, including dropdown menus at the top of the page, from the main datafile."""
 class CourseSearchForm(Form):
@@ -40,6 +40,11 @@ class CourseSearchForm(Form):
     campuses = SelectField('Campus:', choices=campus)
     search = StringField('Search Terms:')
 
+"""Build the review form"""
+class CourseReviewForm(Form):
+    reviewText = TextAreaField('Review');
+    rating = SelectField('Rating', choices=[1, 2, 3, 4, 5]);
+
 def create_app():
     app = Flask(__name__, instance_relative_config=True)
     try:
@@ -54,6 +59,14 @@ def create_app():
         if request.method == 'POST':
             return search_results(search)
         return render_template('index.html',form=search)
+
+    """Review posting page."""
+    @app.route('/review',methods=['GET','POST'])
+    def review():
+        review = CourseReviewForm(request.form)
+        # if request.method == 'POST':
+        #     return post_review(search)
+        return render_template('reviews/post_review.html',form=review)  
 
     """Handle the data from the POST request that will go to the main algorithm.
     If we get an empty search, just go back to home.
@@ -113,6 +126,8 @@ def create_app():
         mayberestricted = course['MaybeRestricted']
         terms = course['Term']
         activities = course['Activity']
+        # Actual Functional Code: rating = course['Rating']
+        rating = 4.5 # Hardcoded Value
         course = {k:v for k,v in course.items() if k not in ['Course','Course Level Number','FASEAvailable','MaybeRestricted','URL','Pre-requisites','Exclusion','Corequisite','Recommended Preparation','AIPreReqs','MajorsOutcomes','MinorsOutcomes','Term','Activity'] and v==v}
         return render_template(
             'course.html',
@@ -128,7 +143,8 @@ def create_app():
             mayberestricted=mayberestricted,
             terms=terms,
             activities=activities,
-            zip=zip
+            zip=zip,
+            rating=rating,
             )
     return app
 
