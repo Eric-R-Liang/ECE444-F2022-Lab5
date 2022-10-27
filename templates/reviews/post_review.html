@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="../static/styles/common.css" rel="stylesheet" type="text/css"/>
+<link href="../static/styles/home.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Review</title>
+</head>
+<a href="https://carte.utoronto.ca/" target="_blank"><img src="/static/CARTE_logo.jpg" class="img-fluid" style="max-width: 25%"></a>
+<h1 style="text-align: center">ECE444 Review</h1>
+
+<body>
+    {% from "_formhelpers.html" import render_field %}
+    <div style="display: flex; justify-content: center; align-items: center">
+    <form method="post" style="display: flex; flex-direction: column; max-width: 1080px">
+        <div style="width: 100%; margin-bottom:10px">
+            {{ render_field(form.rating) }}
+        </div>
+        {{ render_field(form.reviewText) }}
+        <input type="submit" value="Post Review" style="margin-top: 20px">
+    </form>
+    </div>
+</body>
+</html>

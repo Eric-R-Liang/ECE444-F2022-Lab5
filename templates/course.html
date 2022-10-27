@@ -14,6 +14,10 @@
             <b>{{k}}:</b> {{v | safe}}
         </p>
     {% endfor %}
+    <p>
+      <b>Course Rating:</b> {{ rating }}
+      <!-- Should be <b>Course Rating:</b> {{course.rating}} in the actual code -->
+    </p>
 
     {% if faseavailable %}
         <p>

@@ -19,3 +19,9 @@
 ![image](https://user-images.githubusercontent.com/53286365/198165624-2f997fb9-691f-4561-a79a-12396cb40dac.png)
 
 ![image](https://user-images.githubusercontent.com/53286365/198165375-be62a567-c877-4afb-9490-b9ef9fba9577.png)
+
+### User Story 2: Post Review Page </r>
+<img width="1499" src="./screenshots/navid/post_review.png">
+
+### User Story 3: Course Description Review </r>
+<img width="1499" src="./screenshots/navid/course_page_review.png">
