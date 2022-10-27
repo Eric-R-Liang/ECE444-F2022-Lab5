@@ -13,3 +13,9 @@
 
 ### Results Page - Results Table </r>
 <img width="1499" alt="Screen Shot 2022-10-26 at 10 48 02 AM" src="https://user-images.githubusercontent.com/39924702/198058908-c295e9ca-230f-496f-bb38-9c17de1c2c79.png">
+
+## Activity 6 </r>
+### User Story 1
+![image](https://user-images.githubusercontent.com/53286365/198165624-2f997fb9-691f-4561-a79a-12396cb40dac.png)
+
+![image](https://user-images.githubusercontent.com/53286365/198165375-be62a567-c877-4afb-9490-b9ef9fba9577.png)
