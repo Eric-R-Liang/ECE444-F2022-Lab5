@@ -28,4 +28,4 @@
 ### User Story 3: Course Description Review </r>
 ![image](https://user-images.githubusercontent.com/53286365/198180944-dea4e2f6-76e2-45a3-b66f-bf2c16a0e343.png)
 
-<img width="1499" src="./screenshots/navid/course_page_review.png">
+![image](https://user-images.githubusercontent.com/53286365/198183513-55f47955-c58a-4d8c-9227-f97bcfc99d4d.png)
