@@ -27,6 +27,16 @@ class CourseSearchForm(Form):
     year_choices = [
         (t,t) for t in set(df['Course Level'].values)
     ]
+
+    minor = [
+        'Any', 'Advanced Manufacturing', 'Artificial Intelligence Engineering', 'Bioengineering', 
+        'Biomedical Engineering', 'Engineering Business', 'Environmental Engineering',
+        'Global Leadership','Music Performance', 'Nanoengineering', 'Robotics & Mechatronics', 'Sustainable Energy'
+    ]
+
+    review = ['Any', '5', '4+', '3+', '2+', '1']
+
+    nontech = ['Any','Complementary Studies', 'Humanities & Social Sciences']
             
     top = [
         ('10','10'),
@@ -38,6 +48,9 @@ class CourseSearchForm(Form):
     divisions = SelectField('Division:', choices=divisions)
     departments = SelectField('Department:', choices=departments)
     campuses = SelectField('Campus:', choices=campus)
+    minors = SelectField('Minor:', choices=minor)
+    reviews = SelectField('Review Rating (Out of 5):', choices=review)
+    nontechnical = SelectField('CS/HSS Courses:', choices=nontech)
     search = StringField('Search Terms:')
 
 def create_app():
